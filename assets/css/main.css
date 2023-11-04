@@ -1143,9 +1143,54 @@ section {
   color: var(--color-primary);
 }
 
+.produk-button {
+  background-color: #f8a01a; 
+  color: white; 
+  padding: 10px 20px; 
+  border-radius: 4px; 
+  text-decoration: none; 
+  font-size: 16px; 
+  font-weight: bold;
+}
+
+.produk-button:hover {
+  background: rgba(var(--color-primary-rgb), 0.9);
+  padding-right: 19px;
+}
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+.about .content .read-more {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 12px 24px;
+  border-radius: 5px;
+  transition: 0.3s;
+  display: -nline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  background: var(--color-primary);
+}
+
+.about .content .read-more i {
+  font-size: 18px;
+  margin-left: 5px;
+  line-height: 0;
+  transition: 0.3s;
+}
+
+.about .content .read-more:hover {
+  background: rgba(var(--color-primary-rgb), 0.9);
+  padding-right: 19px;
+}
+
+.about .content .read-more:hover i {
+  margin-left: 10px;
+}
+
 .about .about-img {
   position: relative;
   margin: 60px 0 0 60px;
