@@ -1394,7 +1394,6 @@ section {
   min-height: 400px;
   background-size: cover;
   color: rgba(var(--color-white-rgb), 0.8);
-  background: linear-gradient(rgba(var(--color-secondary-rgb), 0.5), rgba(var(--color-secondary-rgb), 0.8));
 }
 
 .onfocus .content {
