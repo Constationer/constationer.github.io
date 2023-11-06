@@ -3271,6 +3271,8 @@ section {
 }
 
 .carousel-image {
+  max-width: 354px;
+  max-height: 750px;
   text-align: center;
 }
 
