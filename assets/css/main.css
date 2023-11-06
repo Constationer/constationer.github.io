@@ -42,26 +42,36 @@ Custom Pribadi
 
 .icon-container {
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  width: 50px; /* Adjust the width and height as needed */
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+  width: 50px;
+  /* Adjust the width and height as needed */
   height: 50px;
-  border-radius: 50%; /* Makes the container circular */
-  border: 2px solid #f8a01a; /* White border */
-  margin: 10px; /* Adjust spacing as needed */
+  border-radius: 50%;
+  /* Makes the container circular */
+  border: 2px solid #f8a01a;
+  /* White border */
+  margin: 10px;
+  /* Adjust spacing as needed */
 }
 
 .icon-container {
-  transition: background-color 0.3s; /* Add a smooth transition effect on background-color */
+  transition: background-color 0.3s;
+  /* Add a smooth transition effect on background-color */
 }
 
 .icon-container:hover {
-  background-color: #f8a01a; /* Change the background color when hovering */
+  background-color: #f8a01a;
+  /* Change the background color when hovering */
 }
 
 .material-symbols-outlined {
-  font-size: 24px; /* Adjust the icon size */
-  color: #f8a01a; /* Set the icon color to #f8a01a */
+  font-size: 24px;
+  /* Adjust the icon size */
+  color: #f8a01a;
+  /* Set the icon color to #f8a01a */
 }
 
 /*--------------------------------------------------------------
@@ -916,7 +926,8 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background: none; /* Remove the background */
+  background: none;
+  /* Remove the background */
   z-index: -1;
 }
 
@@ -942,7 +953,8 @@ section {
   font-weight: 300;
   color: var(--color-white);
   font-family: var(--font-secondary);
-  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); /* Increase the blur radius */
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+  /* Increase the blur radius */
 }
 
 .hero-fullscreen h2 span {
@@ -954,7 +966,8 @@ section {
   margin: 0 0 30px 0;
   font-size: 20px;
   font-weight: 400;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Increase the blur radius */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  /* Increase the blur radius */
 }
 
 .hero-fullscreen .btn-get-started {
@@ -1144,12 +1157,12 @@ section {
 }
 
 .produk-button {
-  background-color: #f8a01a; 
-  color: white; 
-  padding: 10px 20px; 
-  border-radius: 4px; 
-  text-decoration: none; 
-  font-size: 16px; 
+  background-color: #f8a01a;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 16px;
   font-weight: bold;
 }
 
@@ -1157,6 +1170,7 @@ section {
   background: rgba(var(--color-primary-rgb), 0.9);
   padding-right: 19px;
 }
+
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
@@ -3254,4 +3268,11 @@ section {
 .footer .footer-legal .social-links a:hover {
   background: var(--color-primary);
   text-decoration: none;
+}
+
+.carousel-image {
+  max-width: 200px;
+  /* Set the maximum width in pixels */
+  max-height: 150px;
+  /* Set the maximum height in pixels */
 }
