@@ -47,6 +47,25 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2QSWV2MDEH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-2QSWV2MDEH');
+  </script>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-K8C92R8M');</script>
+  <!-- End Google Tag Manager -->
   <!-- =======================================================
   * Template Name: AgrosariFarm
   * Updated: Jul 27 2023 with Bootstrap v5.3.1
@@ -57,7 +76,10 @@
 </head>
 
 <body>
-
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K8C92R8M" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
   <!-- ======= Header ======= -->
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top" data-scrollto-offset="0">
@@ -65,13 +87,13 @@
 
       <a href="index.html" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1>Agrosari<span>.</span></h1>
+        <img src="assets/img/home.png" alt="">
+        <!-- <h1>Agrosari<span>.</span></h1> -->
       </a>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="home.html">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li class="dropdown"><a href="#"><span>About</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li><a href="history.html">History</a></li>
@@ -230,7 +252,7 @@
 
         <!-- Slider for small screens -->
         <div class="d-lg-none">
-          <div class="clients-slider swiper">
+          <div class="clients-slider owl-stage">
             <div class="owl-carousel align-items-center">
               <div><img src="assets/img/value-1.jpg" class="carousel-image" alt=""></div>
               <div><img src="assets/img/value-2.jpg" class="carousel-image" alt=""></div>
@@ -430,15 +452,18 @@
 
     <!-- Owl Carousel JavaScript CDN -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/owl.carousel.min.js"></script>
 
     <script>
       $(document).ready(function () {
+        var owl = $('.owl-carousel');
         $('.owl-carousel').owlCarousel({
+          stagePadding: 25,
+          margin: 10,
           items: 1,  // Number of items to display at a time (1 for one-by-one)
-          loop: true,  // Enable infinite looping
-          autoplay: true,  // Set to true to enable auto-play
-          autoplayTimeout: 2000,  // Adjust the transition speed in milliseconds
+          autoplay: false,  // Set to true to enable auto-play
+          autoplayTimeout: 3000,  // Adjust the transition speed in milliseconds
           nav: false,  // Set to false to hide navigation arrows
           dots: false,  // Set to false to hide navigation dots
         });
