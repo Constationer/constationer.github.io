@@ -3271,8 +3271,11 @@ section {
 }
 
 .carousel-image {
-  max-width: 200px;
-  /* Set the maximum width in pixels */
-  max-height: 150px;
-  /* Set the maximum height in pixels */
+  max-width: 212px;
+  max-height: 450px;
+  text-align: center;
+}
+
+.owl-carousel img {
+  display: inline-block;
 }
