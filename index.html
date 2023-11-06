@@ -188,22 +188,41 @@
           <h2>Klien Kami</h2>
         </div>
 
-        <div class="clients-slider swiper">
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/Client-0.jpg" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/Client-1.jpg" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/Client-2.jpg" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/Client-3.jpg" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/Client-4.jpg" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/Client-5.jpg" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/Client-6.jpg" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/Client-7.jpg" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/Client-8.jpg" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/Client-9.jpg" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/Client-10.jpg" class="img-fluid" alt=""></div>
+        <div class="d-md-none">
+          <div class="clients-slider swiper">
+            <div class="swiper-wrapper align-items-center">
+              <div class="swiper-slide"><img src="assets/img/Client-1-warna.png" class="img-fluid" alt=""></div>
+              <div class="swiper-slide"><img src="assets/img/Client-2-warna.png" class="img-fluid" alt=""></div>
+              <div class="swiper-slide"><img src="assets/img/Client-3-warna.png" class="img-fluid" alt=""></div>
+              <div class="swiper-slide"><img src="assets/img/Client-4-warna.png" class="img-fluid" alt=""></div>
+              <div class="swiper-slide"><img src="assets/img/Client-5-warna.png" class="img-fluid" alt=""></div>
+              <div class="swiper-slide"><img src="assets/img/Client-6-warna.png" class="img-fluid" alt=""></div>
+              <div class="swiper-slide"><img src="assets/img/Client-7-warna.png" class="img-fluid" alt=""></div>
+              <div class="swiper-slide"><img src="assets/img/Client-8-warna.png" class="img-fluid" alt=""></div>
+              <div class="swiper-slide"><img src="assets/img/Client-9-warna.png" class="img-fluid" alt=""></div>
+              <div class="swiper-slide"><img src="assets/img/Cliet-10-warna.png" class="img-fluid" alt=""></div>
+              <div class="swiper-slide"><img src="assets/img/Client-11-warna.png" class="img-fluid" alt=""></div>
+            </div>
           </div>
         </div>
 
+        <div class="d-none d-md-block">
+          <div class="clients-slider owl-stage">
+            <div class="owl-desktop align-items-center">
+              <div class=""><img src="assets/img/Client-1-warna.png" class="carousel-image" alt=""></div>
+              <div class=""><img src="assets/img/Client-2-warna.png" class="carousel-image" alt=""></div>
+              <div class=""><img src="assets/img/Client-3-warna.png" class="carousel-image" alt=""></div>
+              <div class=""><img src="assets/img/Client-4-warna.png" class="carousel-image" alt=""></div>
+              <div class=""><img src="assets/img/Client-5-warna.png" class="carousel-image" alt=""></div>
+              <div class=""><img src="assets/img/Client-6-warna.png" class="carousel-image" alt=""></div>
+              <div class=""><img src="assets/img/Client-7-warna.png" class="carousel-image" alt=""></div>
+              <div class=""><img src="assets/img/Client-8-warna.png" class="carousel-image" alt=""></div>
+              <div class=""><img src="assets/img/Client-9-warna.png" class="carousel-image" alt=""></div>
+              <div class=""><img src="assets/img/Cliet-10-warna.png" class="carousel-image" alt=""></div>
+              <div class=""><img src="assets/img/Client-11-warna.png" class="carousel-image" alt=""></div>
+            </div>
+          </div>
+        </div>
       </div>
     </section><!-- End Clients Section -->
 
@@ -457,12 +476,25 @@
 
     <script>
       $(document).ready(function () {
-        var owl = $('.owl-carousel');
         $('.owl-carousel').owlCarousel({
           stagePadding: 25,
           margin: 10,
           items: 1,  // Number of items to display at a time (1 for one-by-one)
           autoplay: false,  // Set to true to enable auto-play
+          autoplayTimeout: 3000,  // Adjust the transition speed in milliseconds
+          nav: false,  // Set to false to hide navigation arrows
+          dots: false,  // Set to false to hide navigation dots
+        });
+      });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        $('.owl-desktop').owlCarousel({
+          stagePadding: 25,
+          margin: 10,
+          items: 6,  // Number of items to display at a time (1 for one-by-one)
+          autoplay: true,  // Set to true to enable auto-play
           autoplayTimeout: 3000,  // Adjust the transition speed in milliseconds
           nav: false,  // Set to false to hide navigation arrows
           dots: false,  // Set to false to hide navigation dots
